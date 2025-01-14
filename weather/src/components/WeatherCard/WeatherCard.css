@@ -1,0 +1,178 @@
+/* body part */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+/* body part over */
+
+
+
+/* weather container part */
+.weather-card-container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* weather card */
+.weather-card {
+    flex: 1;
+    padding: 20px;
+    background: rgba(173, 216, 230, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.weather-card .search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.weather-card input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.weather-card button {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+}
+
+.weather-card button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.weather-card .weather-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-card .weather-icon img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.weather-card h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.weather-card p {
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+.weather-card .additional-info {
+    margin: 20px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: justify; 
+}
+/* Hover effect */
+.additional-info:hover {
+    transform: scale(1); /* Slightly enlarges the item */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
+    background: rgb(231, 235, 237); /* Changes the background on hover */
+}
+/* Hover effect */
+.weather-card:hover {
+    transform: scale(1); /* Slightly enlarges the item */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
+    background: rgb(202, 229, 244); /* Changes the background on hover */
+}
+
+/* forecast card */
+.forecast-card {
+    flex: 1;
+    padding: 2px;
+    background: rgba(173, 216, 230, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: justify; /* Corrected property */
+}
+/* Hover effect */
+.forecast-card:hover {
+    transform: scale(1); /* Slightly enlarges the item */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
+    background: rgb(202, 229, 244); /* Changes the background on hover */
+}
+.forecast-card h3 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px; 
+}
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  rgba(255, 255, 255, 0.5);
+    border-radius: 50%; 
+    padding: 8px;
+    text-align: center;
+    box-shadow: 2px 4px 5px black;
+    width: 150px; 
+    height: 200px; 
+    flex: 0 0 auto; 
+    margin: 0 10px; 
+}
+
+.nyc-icon{
+    position: relative;
+    left: 160px;
+}
+.nyc-icon img{
+    width:200px;
+    height:auto;   
+}
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .weather-forecast {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .forecast-item {
+        min-width: 80%; 
+        margin-bottom: 10px; 
+    }
+}
+.forecast-item p {
+    margin: 6px 0;
+    font-size: 1rem;
+}
+/* Hover effect */
+.forecast-item:hover {
+    transform: scale(1); /* Slightly enlarges the item */
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
+    background: rgb(231, 235, 237); /* Changes the background on hover */
+}
+/* weather container part over*/

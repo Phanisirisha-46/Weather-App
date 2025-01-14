@@ -10,13 +10,13 @@ body {
 /* body part over */
 
 
-
 /* weather container part */
 .weather-card-container {
     display: flex;
     gap: 20px;
     width: 90%;
     max-width: 1200px;
+    margin-right:45px;
 }
 
 /* weather card */
@@ -27,6 +27,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     font-family: 'Arial', sans-serif;
+
 }
 .weather-card .search-bar {
     display: flex;
@@ -97,7 +98,7 @@ body {
 .weather-card:hover {
     transform: scale(1); /* Slightly enlarges the item */
     box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
-    background: rgb(202, 229, 244); /* Changes the background on hover */
+    background: #c8c8c8 /* Changes the background on hover */
 }
 
 /* forecast card */
@@ -114,7 +115,7 @@ body {
 .forecast-card:hover {
     transform: scale(1); /* Slightly enlarges the item */
     box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5); /* Increases the shadow effect */
-    background: rgb(202, 229, 244); /* Changes the background on hover */
+    background: #e0e0e0; /* Changes the background on hover */
 }
 .forecast-card h3 {
     text-align: center;

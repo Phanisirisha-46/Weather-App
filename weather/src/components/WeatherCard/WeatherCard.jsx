@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './WeatherCard.css';
-import WeatherBackground from '../WeatherBackground'; // Assuming this is for background visuals
-import { WiHumidity, WiBarometer, WiCloudy, WiWindy } from 'react-icons/wi'; // Importing icons
+import { WiHumidity, WiBarometer, WiCloudy, WiWindy } from 'react-icons/wi';
 
 const WeatherCard = () => {
   const [city, setCity] = useState("Hyderabad");
@@ -59,10 +58,6 @@ const WeatherCard = () => {
   return (
     <div className="weather-card-container">
       <div className="weather-card">
-        <WeatherBackground
-          temperature={weather.current.temperature}
-          condition={weather.current.condition}
-        />
         <div className="search-bar">
           <input
             type="text"
@@ -102,9 +97,8 @@ const WeatherCard = () => {
 
       <div className="forecast-card">
         <h3>3-Day Forecast</h3>
-        {/* Icon */}
         <div className="nyc-icon">
-          <img src="https://cdn-icons-png.flaticon.com/512/4834/4834559.png"></img>
+          <img src="https://cdn1.iconfinder.com/data/icons/ui-glynh-04-of-5/100/UI_Glyph_07-19-512.png" alt="Forecast Icon" />
         </div>
         <div className="weather-forecast">
           {weather.forecast.map((day, index) => (

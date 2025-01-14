@@ -1,0 +1,58 @@
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('cloudy.png');
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Make sure the image covers the entire viewport */
+    background-position: center; /* Center the background image */
+  }
+  
+  /* App container should fill the entire screen */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh; /* Ensure it takes up the full viewport height */
+    margin: 0;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  /* Dark mode styles */
+  .app-container.light-mode {
+    background-color: transparent; /* Make the background transparent in light mode */
+    color: black; /* Light mode text color */
+  }
+  /* Dark mode styles */
+  .app-container.dark-mode {
+    background-color: #121212; /* Dark mode background */
+    color: black /* Dark mode text */
+  }
+  
+  /* Toggle button container */
+  .toggle-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Toggle button styles */
+  .toggle-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: grey;
+    transform: scale(1.1);
+  }
+  

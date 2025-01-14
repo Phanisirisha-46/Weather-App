@@ -1,4 +1,4 @@
-# Weather-App
+# Weather-App (Laptop View)
 
 ## Overview
 
@@ -19,4 +19,10 @@ The WeatherCard component is a React-based weather application that fetches real
 - **WeatherAPI** (for real-time weather information)
 - **React Icons** (for weather-related icons)
 - **CSS** (for styling)
+
+#Screen Shots
+![Alt text]("C:\Users\veera\Downloads\cloud1.png")
+![Alt text]("C:\Users\veera\Downloads\cloud2.png")
+
+
 

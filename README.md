@@ -20,7 +20,7 @@ The WeatherCard component is a React-based weather application that fetches real
 - **React Icons** (for weather-related icons)
 - **CSS** (for styling)
 
-#Screen Shots
+## Screen Shots
 ![Dark View](weather/cloud1.png)
 ![Light View](weather/cloud2.png)
 

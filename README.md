@@ -21,8 +21,9 @@ The WeatherCard component is a React-based weather application that fetches real
 - **CSS** (for styling)
 
 #Screen Shots
-![Alt text]("C:\Users\veera\Downloads\cloud1.png")
-![Alt text]("C:\Users\veera\Downloads\cloud2.png")
+![Dark View](weather/cloud1.png)
+![Light View](weather/cloud2.png)
+
 
 
 

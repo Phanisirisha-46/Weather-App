@@ -16,7 +16,7 @@ The WeatherCard component is a React-based weather application that fetches real
 
 - **React** (useState, useEffect for state management and API calls)
 - **Axios** (for fetching weather data)
-- **WeatherAPI** (for real-time weather information)
+- **WeatherAPI** (for real-time weather(climate) information)
 - **React Icons** (for weather-related icons)
 - **CSS** (for styling)
 
